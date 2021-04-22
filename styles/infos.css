@@ -1,0 +1,61 @@
+.title-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.title-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-column {
+    width: 45%;
+    height: auto;
+}
+
+.text-column h3 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.text-column p {
+    margin-bottom: 2em;
+}
+
+
+/* Paiement */
+
+
+/* tarifs */
+
+.glasses-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.glasses-content h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.glasses-content p {
+    text-align: center;
+    font-size: 1em;
+}

@@ -1,0 +1,459 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Rubik:ital,wght@0,400;0,500;1,700&display=swap');
+
+/* font-family: 'Roboto',
+sans-serif;
+font-family: 'Rubik',
+sans-serif; */
+
+
+/* general*/
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: left;
+}
+
+p,
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+}
+
+.button-shape {
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #C881E6;
+    display: flex;
+    transition: 0.5s;
+}
+
+.button-shape p {
+    margin: auto;
+}
+
+.button:hover .button-shape {
+    background-color: white;
+    color: #9652b3;
+    transition: 0.5s;
+}
+
+.link {
+    transition: .35s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    transition: transform .35s;
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: .35s;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+    transition: .35s;
+}
+
+
+/* Main Wrappers */
+
+.wrapper {
+    padding: 100px;
+    position: relative;
+}
+
+.wrapper2 {
+    padding: 100px 100px 0 100px;
+    position: relative;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.wrapper-header {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: inline-flex;
+    align-content: stretch;
+    align-items: middle;
+}
+
+.wrapper-title {
+    flex: 3;
+}
+
+.subtitle {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.legend {
+    font-weight: 300;
+    text-align: center;
+}
+
+.wrapper-container1 {
+    padding: 100px;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.wrapper-container2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper-container3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Cinema */
+
+.cinema-paragraph {
+    width: 45%;
+    height: auto;
+    list-style: inside;
+    padding: 5px;
+}
+
+.cinema-paragraph h3 {
+    text-align: center;
+}
+
+.cinema-icon {
+    flex: 1;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.cinema-decoration {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+
+/* Theme du mois */
+
+.theme {
+    padding-bottom: 0;
+}
+
+.theme::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+}
+
+.theme-icon {
+    flex: 1;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
+/* Evenements du mois */
+
+.events-icon {
+    flex: 1;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.arrowleft {
+    color: #9652b3;
+    position: absolute;
+    cursor: pointer;
+    left: -3%;
+    top: 30%;
+    font-size: 3em;
+}
+
+.arrowright {
+    color: #9652b3;
+    position: absolute;
+    cursor: pointer;
+    right: -3%;
+    top: 30%;
+    font-size: 3em;
+}
+
+#carousel {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.container-event {
+    max-width: 350px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 30px;
+}
+
+.container-event-image {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    width: 60%;
+    margin-bottom: 0.4em;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.container-event-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Films a l'affiche */
+
+.prog-icon {
+    flex: 1;
+    max-width: 150px;
+    max-height: 212px;
+}
+
+.film-container {
+    width: 25%;
+    padding: 0 50px 150px 50px;
+    max-width: 600px;
+    min-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.film-image {
+    width: 100%;
+    position: relative;
+    height: auto;
+    flex: 0;
+}
+
+.film-image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 3px #9652b3;
+    border-radius: 5px;
+    transform: rotate(0deg);
+    transition: .35s;
+    opacity: 0;
+}
+
+.film-image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border: solid 3px #C881E6;
+    border-radius: 5px;
+    transform: rotate(0deg);
+    transition: .35s;
+    opacity: 0;
+}
+
+.film-image:hover:before {
+    transform: rotate(3deg);
+    transition: .35s;
+    opacity: 1;
+}
+
+.film-image:hover:after {
+    transform: rotate(-3deg);
+    transition: .35s;
+    opacity: 1;
+}
+
+.film-image img {
+    object-fit: contain;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.film-presentation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex: 1;
+}
+
+.film-title {
+    padding-top: 20px;
+    flex: 1;
+}
+
+.film-description {
+    flex: 0;
+}
+
+
+/* Acces */
+
+.acces {
+    height: 100vh;
+}
+
+.acces-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.acces-plan {
+    height: auto;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.acces-plan img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.plan-img {
+    position: relative;
+}
+
+.acces-aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.acces-paragraph {
+    list-style: inside;
+    margin-bottom: 100px;
+}
+
+.acces-plan h3,
+.acces-paragraph h3 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.acces-decoration {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+
+/* Programmation */
+
+.prog-illustration {
+    position: absolute;
+    z-index: 0;
+    height: 300%;
+    width: auto;
+    bottom: 0;
+    left: 0;
+}
+
+.prog-illustration2 {
+    position: absolute;
+    z-index: 0;
+    height: 300%;
+    width: auto;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,77 @@
+.theme-slider {
+    display: flex;
+    margin: 100px 0;
+}
+
+.theme-slider-box {
+    width: 25%;
+    height: 70vh;
+    transition: .35s;
+    position: relative;
+    align-items: center;
+}
+
+.theme-slider-box img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.theme-slider-box:first-child img {
+    border-radius: 5px 0 0 5px;
+}
+
+.theme-slider-box:last-child img {
+    border-radius: 0 5px 5px 0;
+}
+
+.theme-slider-box .slider-box-description {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 70%;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0;
+    transition: .35s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slider-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .35s;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.slider-button {
+    position: absolute;
+    font-size: 3em;
+    color: #9652B3;
+    left: 10%;
+    top: 10%;
+    opacity: 0;
+    transition: .35s;
+    z-index: 2;
+}
+
+
+/* Etat hover */
+
+.theme-slider-box:hover {
+    width: 70%;
+}
+
+.theme-slider-box:hover .slider-box-description,
+.theme-slider-box:hover .slider-overlay,
+.theme-slider-box:hover .slider-button {
+    opacity: 1;
+    cursor: pointer;
+}
